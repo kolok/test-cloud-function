@@ -62,6 +62,7 @@ exports.processFile = function(event, callback) {
         }
         console.log("The file was saved!");
         resultBucket.upload(tempFilePath, {destination: filePath});
+        console.log("The file was upload!");
       });
     });
   });
